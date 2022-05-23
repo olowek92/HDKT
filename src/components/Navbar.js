@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./NavbarStyles.css";
+import Logo from "../assets/logo.png";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -21,7 +22,7 @@ const Navbar = () => {
   return (
     <div className={color ? "header header-bg" : "header"}>
       <Link to="/">
-        <h1 style={{ color: "orange" }}>HDKT</h1>
+        <img src={Logo} alt="logo" className="logo" />
       </Link>
       <ul className={click ? "nav-menu active" : "nav-menu"}>
         <li>

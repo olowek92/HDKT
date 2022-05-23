@@ -14,7 +14,7 @@ const Video = () => {
         <h1>HD KRAKÓW TEAM</h1>
         <p>Łączy nas wspólna pasja.</p>
         <div>
-          <Link to="/training" className="btn">
+          <Link to="/events" className="btn">
             Wydarzenia
           </Link>
           <Link to="/contact" className="btn btn-light">
