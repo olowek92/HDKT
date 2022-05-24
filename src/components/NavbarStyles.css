@@ -29,11 +29,14 @@
 
 .hamburger {
     display: none;
+    margin-top: 30px;
+    cursor: pointer;
 }
 
 @media screen and (max-width:1240px) {
     .hamburger {
         display: block;
+        margin-right: 20px;
     }
 
     .nav-menu {
@@ -65,9 +68,32 @@
 }
 
 .logo {
-    width: 5%;
+    width: 15%;
     position: absolute;
     top: 10%;
-    left: 2%;
+    left: 10%;
+    margin-top: 20px;
+    cursor: pointer;
 }
 
+@media (min-width: 768px) {
+    .hamburger {
+        margin-right: 50px;
+        margin-top: 40px;
+    }
+
+    .logo {
+        width: 7%;
+        margin-top: 25px;
+        /* top: 10%; */
+    }
+}
+
+@media (min-width: 992px) { 
+    .logo {
+        width: 6%;
+        top: 5%;
+        left: 5%;
+        margin: auto;
+    }
+}
