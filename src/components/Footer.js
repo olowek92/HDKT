@@ -3,10 +3,13 @@ import "./FooterStyles.css";
 import {
   FaFacebook,
   FaMailBulk,
-  FaPhone,
+  // FaPhone,
   FaSearchLocation,
   FaYoutube,
 } from "react-icons/fa";
+
+const FacebookUrl = "https://www.facebook.com/HD-Kraków-Team-102328762343792/";
+const YoutubeUrl = "https://youtube.com/user/eklosowski";
 
 const Footer = () => {
   return (
@@ -22,15 +25,6 @@ const Footer = () => {
               <p>Kraków</p>
               <h4>Polska</h4>
             </div>
-          </div>
-          <div className="phone">
-            <h4>
-              <FaPhone
-                size={20}
-                style={{ color: "#ffffff", marginRight: "2rem" }}
-              />{" "}
-              XXX-XXX-XXX
-            </h4>
           </div>
           <div className="email">
             <h4>
@@ -50,14 +44,20 @@ const Footer = () => {
             razem czasu podczas wspólnych podróży.
           </p>
           <div className="social">
-            <FaFacebook
-              size={30}
-              style={{ color: "#ffffff", marginRight: "1rem" }}
-            />
-            <FaYoutube
-              size={30}
-              style={{ color: "#ffffff", marginRight: "1rem" }}
-            />
+            <a href={FacebookUrl} target="_blank" rel="noreferrer">
+              <FaFacebook
+                className="anchor"
+                size={30}
+                style={{ color: "#ffffff", marginRight: "1rem" }}
+              />
+            </a>
+            <a href={YoutubeUrl} target="_blank" rel="noreferrer">
+              <FaYoutube
+                className="anchor"
+                size={30}
+                style={{ color: "#ffffff", marginRight: "1rem" }}
+              />
+            </a>
           </div>
         </div>
       </div>
