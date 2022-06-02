@@ -1,9 +1,55 @@
+.mobileView {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.tabletView {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+    display: none;
+}
+
 #video {
     position: fixed;
     width: 100%;
     height: 100%;
     object-fit: cover;
     z-index: -1;
+    display: none;
+}
+
+@media(min-width: 430px) {
+    .mobileView {
+        display: none;
+    }
+
+    .tabletView {
+        display: block;
+    }
+
+    #video {
+        display: none; 
+    }
+}
+
+@media(min-width: 992px) {
+    .mobileView {
+        display: none;
+    }
+
+    .tabletView {
+        display: none;
+    }
+
+    #video {
+        display: block;
+    }
 }
 
 .hero {
@@ -28,7 +74,7 @@
 
 .hero p {
     font-size: 1.8rem;
-    font-weight: 200;
+    font-weight: 400;
     text-transform: uppercase;
     margin-bottom: 1.6rem;
     color: #fff;
@@ -46,5 +92,11 @@
     .content p {
         font-size: 1.4rem;
         margin-bottom: 1.6rem;
+    }
+}
+
+@media(max-width: 395px) {
+    .hero .content h1 {
+        font-size: 3rem;
     }
 }

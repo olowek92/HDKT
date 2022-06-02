@@ -1,5 +1,6 @@
 import React from "react";
 import "./TeamStyles.css";
+import TomekZ from "../assets/persons/TomekZ.JPEG";
 
 const Team = () => {
   return (
@@ -8,23 +9,19 @@ const Team = () => {
         <div className="card">
           <p className="btc">PHOTO</p>
           <p>- Edward -</p>
-          <p>- Kłosowski -</p>
           <p>- Road Glide -</p>
           <p>- Road King -</p>
         </div>
         <div className="card">
           <p className="btc">PHOTO</p>
-          <p>- Wojciech -</p>
-          <p>- Ołownia -</p>
-          <p>- Iron 883 -</p>
-          <p>- Low Rider -</p>
-        </div>
-        <div className="card">
-          <p className="btc">PHOTO</p>
           <p>- Kazimierz -</p>
-          <p>- Kowalcze -</p>
           <p>- Street Glide -</p>
           <p>- Street Bob -</p>
+        </div>
+        <div className="card">
+          <img className="image" src={TomekZ} alt="tomasz" />
+          <p>- Tomasz -</p>
+          <p>- Breakout -</p>
         </div>
       </div>
     </div>

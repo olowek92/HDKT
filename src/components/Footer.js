@@ -3,7 +3,6 @@ import "./FooterStyles.css";
 import {
   FaFacebook,
   FaMailBulk,
-  // FaPhone,
   FaSearchLocation,
   FaYoutube,
 } from "react-icons/fa";
@@ -32,7 +31,9 @@ const Footer = () => {
                 size={20}
                 style={{ color: "#ffffff", marginRight: "2rem" }}
               />{" "}
-              hdkrakowteam2021@gmail.com
+              <a href="mailto:hdkrakowteam2021@gmail.com">
+                hdkrakowteam2021@gmail.com
+              </a>
             </h4>
           </div>
         </div>

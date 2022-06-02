@@ -3,10 +3,14 @@ import { Link } from "react-router-dom";
 import "./VideoStyles.css";
 
 import tripVideo from "../assets/teamTrip.mp4";
+import mobileMainPage from "../assets/mobileMainPage.jpeg";
+import tabletMainPage from "../assets/tabletMainPage.jpeg";
 
 const Video = () => {
   return (
     <div className="hero">
+      <img src={mobileMainPage} alt="team" className="mobileView" />
+      <img src={tabletMainPage} alt="team" className="tabletView" />
       <video autoPlay loop muted id="video">
         <source src={tripVideo} type="video/mp4" />
       </video>

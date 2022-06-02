@@ -22,10 +22,10 @@ const Events = () => {
       <div className="right">
         <div className="img-container">
           <div className="image-stack top">
-            <img src={FatBob} className="img" alt="" />
+            <img src={FatBob} className="img" alt="motorcycle" />
           </div>
           <div className="image-stack bottom">
-            <img src={HarleyTank} className="img" alt="" />
+            <img src={HarleyTank} className="img" alt="motorcycle" />
           </div>
         </div>
       </div>
