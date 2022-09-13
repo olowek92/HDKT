@@ -40,9 +40,10 @@ const Footer = () => {
         <div className="right">
           <h4>O nas</h4>
           <p>
-            Team powstał w 2021 roku. Już po roku było nas prawie 40 osób.
-            Stawiamy na przyjacielską atmosfere, dobrą zabawe oraz spędzanie
-            razem czasu podczas wspólnych podróży.
+          Najważniejsza dla nas jest wspólna jazda i pokonywanie kolejnych kilometrów w gronie Przyjaciół. Naszą grupę tworzą osoby z pasją do motocykli, pozytywnie zakręcone i to maksymalnie na tym punkcie.
+          Wszyscy w grupie mają taki sam status, a im więcej osób to tym więcej pomysłów na kolejne podróże, spotkania i wspólną zabawę. 
+          Grupa HD Kraków Team powstała w 2021 roku a we wrześniu 2022 liczy około 60 osób. Wszyscy jesteśmy fanami marki Harley-Davidson, część z nas zawsze marzyła o motocyklu tej marki więc spełniliśmy swoje marzenia. 
+          Takim niepisanym mottem jest „nie ważne gdzie jedziesz ale z kim”
           </p>
           <div className="social">
             <a href={FacebookUrl} target="_blank" rel="noreferrer">
