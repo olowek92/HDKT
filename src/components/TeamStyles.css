@@ -30,7 +30,7 @@
 .image {
     width: 100%;
     height: 87%;
-    object-fit: fill;
+    object-fit: cover;
 }
 
 .card .btc {
@@ -45,10 +45,14 @@
     font-size: 1.2rem;
 }
 
-@media screen and (max-width: 980px) {
+@media screen and (max-width: 768px) {
     .card-container {
         max-width: 90%;
         margin: auto;
         grid-template-columns: 1fr;
+    }
+
+    .card1 {
+       height: 550px;
     }
 }
